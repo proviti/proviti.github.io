@@ -1,0 +1,72 @@
+div.product-img {
+    background-color: black;
+    /*width: 200px;
+    height: 200px;*/
+    display: table-cell;
+    text-align: center; /* horizontal center */
+    vertical-align: middle; /* vertical center */
+}
+
+.product-img img {
+    vertical-align: middle; /* also needed to adjust better inside table-cell */
+    -o-object-fit: contain;
+    object-fit: contain;
+    max-height: 100%; /* height can be maximum of container, maintains ratio */
+    max-width: 100%; /* width can be maximum of container, maintains ratio */
+    height: 100%;
+    width: 100%;
+}
+/*.zoom {
+    display: inline-block;
+    position: relative;
+}
+
+    .zoom img {
+        display: block;
+    }*/
+/*.zoomit-ghost {
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    cursor: wait;
+    display: block;
+    position: absolute;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+}
+
+.zoomit-zoomed {
+    top: 0;
+    left: 0;
+    opacity: 0;
+    z-index: 5;
+    position: absolute;
+    width: auto !important;
+    height: auto !important;
+    max-width: none !important;
+    max-height: none !important;
+    min-width: 100% !important;
+    min-height: 100% !important;
+    transition: transform 0.1s ease, opacity 0.2s ease;
+}
+
+.zoomit-container {
+    overflow: hidden;
+    position: relative;
+    vertical-align: top;
+    display: inline-block;
+}
+
+    .zoomit-container img {
+        vertical-align: top;
+    }
+
+    .zoomit-container.loaded .zoomit-ghost {
+        cursor: crosshair;
+    }
+
+    .zoomit-container.loaded .zoomit-zoomed {
+        opacity: 1;
+    }*/

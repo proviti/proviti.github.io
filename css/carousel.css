@@ -1,0 +1,40 @@
+.outerWrapper {
+	text-align: left;
+	position:relative;
+	margin:10px 0 60px 0;
+	width:1080px;
+}
+
+.item {
+	float: left;
+	margin-right: 5px;
+	width: 215px;
+    background-color: #fff;
+	border-radius: 5px;
+}
+
+.left-nav-btn, .right-nav-btn {
+	position:absolute;
+	width:37px;
+	height:37px;
+	top:-53px;
+	cursor:pointer;
+	opacity: 0.8;
+	background:transparent url('../images/carousel/arrows.png') top left no-repeat;
+	-webkit-transition:opacity 0.2s linear;
+  	-moz-transition:opacity 0.2s linear;
+  	-o-transition:opacity 0.2s linear;
+  	transition:opacity 0.2s linear;
+}
+.left-nav-btn {
+	left:13%;
+}
+.right-nav-btn {
+	background-position: top right;
+	float: left;
+	left: 180px;
+}
+
+.left-nav-btn:hover, .right-nav-btn:hover {
+	opacity: 1;
+}

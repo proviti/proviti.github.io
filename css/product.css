@@ -1,0 +1,328 @@
+.product .product-card {
+    z-index: 1;
+    /*background-color: #166d3b;
+    background-image: linear-gradient(147deg, #166d3b 0%, #000000 74%);*/
+    position: relative;
+    width: 200px;
+    height: 230px;
+    margin: 1px 10px;
+    color: #166d3b;
+    /*border-radius: 10px;*/
+}
+
+
+    .product .product-card .product-img {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 80%;
+        height:170px;
+    }
+    .product .product-card .p-info {
+        /*background: rgba(0, 0, 0, 0.5);*/
+        color: #166d3b;
+        /* color: #fff;*/
+        position: relative;
+        width: 100%;
+        text-align: center;
+        bottom: 1px;
+        font-size: 17px;
+        letter-spacing: 1px;
+        justify-content: center;
+        align-items: center;
+        overflow:hidden;
+    }
+    /*.product .product-card .name {
+        z-index: 2;
+        color: #fff;
+        position: absolute;
+        width: 100%;
+        text-align: center;
+        bottom: 60px;
+        font-size: 20px;
+        letter-spacing: 1px;
+    }*/
+
+.product .product-card .price {
+    z-index: 2;
+    /*color: #fff;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    bottom: 10px;*/
+    font-size: 10px;
+    font-weight: 300;
+    /*background: rgba(0, 0, 0, 0.5);*/
+}
+
+/*Styles for popup view*/
+.product .popup-view {
+    z-index: 2;
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+    overflow-y: auto;
+}
+
+.price {
+    position: relative;
+}
+
+
+del {
+    color: red;
+    font-size: 15px;
+    text-decoration: none;
+    padding: 1em 1em 1em 0.5em;
+}
+
+    del:before {
+        content: " ";
+        display: block;
+        width: 25%;
+        border-top: 2px solid rgba(255, 0, 0, 0.8);
+        height: 18px;
+        position: absolute;
+        bottom: -4px;
+        left: 59px;
+        transform: rotate(-20deg);
+    }
+
+ins {
+    font-size: 15px;
+    text-decoration: none;
+    /*padding: 1em 1em 1em 0.5em;*/
+}
+
+
+.product .popup-view.active{
+  opacity: 1;
+  visibility: visible;
+}
+
+.product .popup-card{
+  position: relative;
+  display: flex;
+  width: 800px;
+  height: 500px;
+}
+.popup-card {
+    margin: 120px 20px;
+}
+.product .popup-card .product-img {
+    z-index: 9999999999999;
+    background: #1D212B;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+    height: 90%;
+    transform: translateY(25px);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.product .popup-card .product-img img{
+  z-index: 2;
+  position: relative;
+  width: 450px;
+  left: -50px;
+}
+
+.product .popup-card .info {
+    z-index: 99999999;
+    background: #fff;
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    width: 55%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 40px;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+
+    .product .scroll-container {
+        margin: auto;
+        max-height: 100%;
+        overflow: auto;
+    }
+
+
+.product .popup-card .close-btn {
+    color: #555;
+    z-index: 999999999999999999999999;
+    position: absolute;
+    right: 0;
+    font-size: 20px;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.product .popup-card .info h2{
+  font-size: 40px;
+  line-height: 40px;
+  margin: 1px;
+}
+
+.product .popup-card .info h2 span{
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.product .popup-card .info p{
+  font-size: 15px;
+  margin: 10px;
+}
+
+.product .popup-card .info .price{
+  font-size: 45px;
+  font-weight: 300;
+  margin: 10px;
+}
+
+.product .popup-card .info .add-cart-btn{
+  color: #fff;
+  background: #009DD2;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin: 10px auto;
+  padding: 10px 50px;
+  border-radius: 20px;
+}
+
+.product .popup-card .info .add-wish{
+  color: #009DD2;
+  font-size: 16px;
+  text-align: center;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.product-card {
+    position: relative;
+}
+
+    .product-card .add2cart {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 10;
+        opacity: 0;
+        transition: all 0.8s ease;
+    }
+
+        .product-card .add2cart .fas {
+            margin: 0;
+            font-size: 35px;
+            color: #166d3b;
+        }
+
+    .product-card:hover .add2cart {
+        opacity: 1;
+    }
+
+    .product-card:hover img {
+        opacity: 0.3;
+    }
+    /*.product-card:hover img {
+        -webkit-filter: sepia(90%);
+    }*/
+
+    .product-card .added2cart {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 10;
+        opacity: 0;
+        transition: all 0.8s ease;
+    }
+
+input[type="checkbox"] + .add2cart {
+    opacity: 1;
+}
+
+input[type="checkbox"]:checked + .add2cart {
+    opacity: 0;
+}
+/*Responsive styles*/
+
+@media (max-width: 900px){
+  .product .popup-card{
+    flex-direction: column;
+    width: 550px;
+    height: auto;
+  }
+
+  .product .popup-card .product-img{
+    z-index: 3;
+    width: 100%;
+    height: 200px;
+    transform: translateY(0);
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+
+  .product .popup-card .product-img img{
+    left: initial;
+    max-width: 100%;
+  }
+
+  .product .popup-card .info{
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+
+  .product .popup-card .info h2{
+    margin: 20px 5px 5px 5px;
+    font-size: 25px;
+  }
+
+  .product .popup-card .info h2 span{
+    font-size: 10px;
+  }
+
+  .product .popup-card .info p{
+    margin: 5px;
+    font-size: 13px;
+  }
+
+  .product .popup-card .info .price{
+    margin: 5px;
+    font-size: 30px;
+  }
+
+  .product .popup-card .info .add-cart-btn{
+    margin: 5px auto;
+    padding: 5px 40px;
+    font-size: 14px;
+  }
+
+  .product .popup-card .info .add-wish{
+    font-size: 14px;
+  }
+
+  .product .popup-card .close-btn{
+    z-index: 4;
+  }
+}
