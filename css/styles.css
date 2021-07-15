@@ -1,4 +1,4 @@
-@charset "UTF-8";
+﻿@charset "UTF-8";
 /*!
 * Start Bootstrap - Simple Sidebar v6.0.2 (https://startbootstrap.com/template/simple-sidebar)
 * Copyright 2013-2021 Start Bootstrap
@@ -616,29 +616,29 @@ progress {
 }
 
 @media (min-width: 576px) {
-  .container-sm, .container {
-    max-width: 540px;
-  }
+    .container-sm, .container, .container-fluid {
+        max-width: 540px;
+    }
 }
 @media (min-width: 768px) {
-  .container-md, .container-sm, .container {
-    max-width: 720px;
-  }
+    .container-md, .container-sm, .container, .container-fluid {
+        max-width: 720px;
+    }
 }
 @media (min-width: 992px) {
-  .container-lg, .container-md, .container-sm, .container {
-    max-width: 960px;
-  }
+    .container-lg, .container-md, .container-sm, .container, .container-fluid {
+        max-width: 960px;
+    }
 }
 @media (min-width: 1200px) {
-  .container-xl, .container-lg, .container-md, .container-sm, .container {
-    max-width: 1140px;
-  }
+    .container-xl, .container-lg, .container-md, .container-sm, .container, .container-fluid {
+        max-width: 1140px;
+    }
 }
 @media (min-width: 1400px) {
-  .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
-    max-width: 1320px;
-  }
+    .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container, .container-fluid {
+        max-width: 1320px;
+    }
 }
 .row {
   --bs-gutter-x: 1.5rem;

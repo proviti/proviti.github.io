@@ -14,27 +14,32 @@
 }
 
 .left-nav-btn, .right-nav-btn {
-	position:absolute;
-	width:37px;
-	height:37px;
-	top:-53px;
-	cursor:pointer;
-	opacity: 0.8;
-	background:transparent url('../images/carousel/arrows.png') top left no-repeat;
-	-webkit-transition:opacity 0.2s linear;
-  	-moz-transition:opacity 0.2s linear;
-  	-o-transition:opacity 0.2s linear;
-  	transition:opacity 0.2s linear;
+    position: relative;
+    /*top: -60px;*/
+    cursor: pointer;
+    opacity: 0.8;
+    font-family: 'Font Awesome\ 5 Free';
+    font-size: 35px;
+    color: wheat;
+    font-weight: 900;
 }
 .left-nav-btn {
-	left:13%;
+    /*left:15%;*/
+    /*margin: 17px 175px 0;*/
+    margin: -317px 170px;
+}
+.left-nav-btn:before {
+    content: "\f104";
 }
 .right-nav-btn {
-	background-position: top right;
+    margin: 265px 0 0 200px;
+    /*background-position: top right;
 	float: left;
-	left: 180px;
+	left: 190px;*/
 }
-
+    .right-nav-btn:before {
+        content: "\f105";
+    }
 .left-nav-btn:hover, .right-nav-btn:hover {
 	opacity: 1;
 }

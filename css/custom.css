@@ -133,6 +133,7 @@ a {
     background: #fff;
     line-height: 1.2em;
     float: right;
+    right: 1%;
 }
 
     .legend2 a i {
@@ -142,23 +143,23 @@ a {
        
 
 
-@media screen and (min-width: 1001px) {
+/*@media screen and (min-width: 1001px) {
     .legend2 {
         right: 1%;
     }
 }
-@media screen and (min-width: 701px )and (max-width: 1000px) {
+@media screen and (min-width: 301px )and (max-width: 1000px) {
     .legend2 {
-        right: 40%;
+        right: 5%;
     }
-}
-@media screen and (min-width: 501px )and (max-width: 700px) {
+}*/
+/*@media screen and (min-width: 501px )and (max-width: 700px) {
     .legend2 {
-        right: 55%;
+        right: 5%;
     }
 }
 @media screen and (min-width: 301px )and (max-width: 500px) {
     .legend2 {
-        right: 85%;
+        right: 3%;
     }
-}
+}*/

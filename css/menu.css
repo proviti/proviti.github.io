@@ -1,7 +1,25 @@
 #sidebar-wrapper {
     width: 270px;
+    background-color: #ffffff;
+    /*z-index: 99999999999999;*/
+    position:relative;
+    /*position:absolute;*/
     /*border-right: 3px solid #166d3b;*/
 }
+/*#sidebarToggle{
+    margin-left:18%;
+}
+.pre-cssmenu {
+    height: 45px;
+    margin:10px 35px;
+}
+.pre-cssmenu h3 {
+    background-color: #166d3b;
+    background-image: linear-gradient( 147deg, #166d3b 0%, #166d3b 74%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight:900;
+}*/
 #cssmenu,
 #cssmenu ul,
 #cssmenu ul li,
@@ -17,20 +35,15 @@
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
-#sidebar-wrapper {
-    /*background-color: #166d3b;
-    background-image: linear-gradient(147deg, #166d3b 0%, #000000 74%);*/
-    /*background-color: #000000;
-    background-image: linear-gradient(305deg, #000000 0%, #414141 74%);*/
-}
 #cssmenu {
     top: 55px;
     color: #166d3b;
-    width:240px;
+    width: 240px;
     height: 100%;
     position: fixed;
-    /*z-index: 1;*/
-    overflow-y:scroll;
+    z-index: 111;
+    overflow-y: scroll;
+    background-color: #ffffff;
 }
 #cssmenu ul ul {
   display: none;
@@ -127,4 +140,33 @@
     width: 25px;
     border-radius: 50%;
     margin-right: 5px;
+}
+
+
+.hamburger {
+    display: inline-block;
+    cursor: pointer;
+    margin: 0 10%;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 20px;
+    height: 3px;
+    background-color: wheat;
+    margin: 3px 0;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-2px, 7px);
+}
+
+.change .bar2 {
+    opacity: 0;
+}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-2px, -6px);
 }

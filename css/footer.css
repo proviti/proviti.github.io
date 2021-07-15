@@ -1,3 +1,10 @@
+#footer_html_render {
+    z-index: 10000;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
 .new_footer_area {
     background: #fbfbfd;
 }
