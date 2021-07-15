@@ -35,7 +35,7 @@ var footer = '<div class="new_footer_top">                                      
     '                <div class="col-lg-3 col-md-6">                                                                                                                                        ' +
     '                    <div class="f_widget company_widget wow fadeInLeft" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInLeft;">         ' +
     '                        <h3 class="f-title f_600 t_color f_size_18">Get in Touch</h3>                                                                                                  ' +
-    '                        <p>Don’t miss any new exclusive product and news.!</p>                                                                                                         ' +
+    '                        <p>Don\'t miss any new exclusive product and news.!</p>                                                                                                         ' +
     '                        <input type="text" name="EMAIL" class="form-control memail" placeholder="Email">                                                                               ' +
     '                        <button class="btn btn_get btn_get_two" type="button">Subscribe</button>                                                                                       ' +
     '                        <div class="f_social_icon">                                                                                                                                    ' +
