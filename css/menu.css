@@ -1,3 +1,7 @@
+#sidebar-wrapper {
+    width: 270px;
+    /*border-right: 3px solid #166d3b;*/
+}
 #cssmenu,
 #cssmenu ul,
 #cssmenu ul li,
@@ -21,11 +25,12 @@
 }
 #cssmenu {
     top: 55px;
-    width: 230px;
     color: #166d3b;
+    width:240px;
     height: 100%;
     position: fixed;
-    z-index: 1;
+    /*z-index: 1;*/
+    overflow-y:scroll;
 }
 #cssmenu ul ul {
   display: none;
@@ -92,7 +97,7 @@
   transform: rotate(45deg);
 }
 #cssmenu ul ul li a {
-    padding: 10px 7px 0 50px;
+    padding: 10px 5px 0 40px;
     cursor: pointer;
     z-index: 2;
     font-size: 14px;
