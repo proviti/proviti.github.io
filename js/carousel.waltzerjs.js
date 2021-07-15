@@ -51,7 +51,18 @@
             this.init(this);
 
         };
-
+        
+        $(window).resize(function () {
+            resize4legend();
+        });
+        resize4legend();
+        function resize4legend() {
+            var w = $(window).width();
+            var h = $(window).height();
+            console.log(w, h);
+            $('.outerWrapper').css('width', (w - 286) + 'px');
+            //$('.legend2').css('left', (w - w/4) + 'px');
+        }
         plugin.prototype.coreValues = function(container){
 
             this.$container = container;
@@ -75,7 +86,7 @@
                 this.itemWidth = this.$items.outerWidth(true);
                 this.itemMarginWidth =  this.itemWidth - this.$items.outerWidth(false);
                 this.containerHeight = this.$items.outerHeight(false);
-                //console.log(this.itemWidth);
+                console.log(this.itemWidth);
             }
             this.innerWrapperWidth = (this.itemWidth * this.itemCount);
             this.innerWrapperPos = 0;

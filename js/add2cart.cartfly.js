@@ -64,7 +64,7 @@ $.each($('.product-card'), function () {
     let input = $(this).find("input").eq(0);
     for (i = 0; i <= localStorage.length - 1; i++) {
         key = localStorage.key(i);
-        console.log(key, input.attr('id'));
+        //console.log(key, input.attr('id'));
         if (key == input.attr('id'))
         checkBoxCkecked(checkBox);
     }

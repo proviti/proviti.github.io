@@ -6,7 +6,9 @@
 // 
 // Scripts
 // 
-
+function hamburger(x) {
+    x.classList.toggle("change");
+}
 window.addEventListener('DOMContentLoaded', event => {
 
     // Toggle the side navigation
