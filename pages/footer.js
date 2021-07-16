@@ -53,13 +53,9 @@ var footer = '<div class="new_footer_top">                                      
     '    </div>                                                                                                                                                                             ' +
     '    <div class="footer_bottom">                                                                                                                                                        ' +
     '        <div class="container">                                                                                                                                                        ' +
-    '            <div class="row align-items-center">                                                                                                                                       ' +
-    '                <div class="col-lg-6 col-sm-7">                                                                                                                                        ' +
-    '                    <p class="mb-0 f_400">© success coders 2021 All rights reserved.</p>                                                                                               ' +
-    '                </div>                                                                                                                                                                 ' +
-    '                <div class="col-lg-6 col-sm-5 text-right">                                                                                                                             ' +
-    '                    <!--<p>Made with <i class="icon_heart"></i> in <a href="#">CakeCounter</a></p>-->                                                                                  ' +
-    '                    <p>Made with <i class="icon_heart"></i> in <a href="#">Success Coders</a></p>                                                                                      ' +
+    '            <div class="row">                                                                                                                                       ' +
+    '                <div class="col-12" style="text-align:center;"> <p class="mb-0" > Made by <a href="https://asalam345.github.io" target="_blank">Success Coders</a></p >  ' +
+    '                    <p class="mb-0 f_400"> &copy; success coders 2021 All rights reserved.</p>                                                                                               ' +
     '                </div>                                                                                                                                                                 ' +
     '            </div>                                                                                                                                                                      ' +
     '        </div>                                                                                                                                                                          ' +
