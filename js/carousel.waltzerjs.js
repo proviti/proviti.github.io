@@ -59,8 +59,9 @@
         function resize4legend() {
             var w = $(window).width();
             var h = $(window).height();
-            console.log(w, h);
-            $('.outerWrapper').css('width', (w - 286) + 'px');
+            console.log(w);
+            if (w >= 700) $('.outerWrapper').css('width', (w - 286) + 'px');
+            else $('.outerWrapper').css('width', (w - 40) + 'px');
             //$('.legend2').css('left', (w - w/4) + 'px');
         }
         plugin.prototype.coreValues = function(container){

@@ -71,7 +71,7 @@ function doShowAll() {
 			list += '<div class="cart-list-row d-flex flex-row justify-content-between align-items-center bg-white  px-3 rounded">' +
 				'<div class="mr-1" ><img class="rounded" src="images/' + pic + '" width="70"></div>' +
                             '<div class="d-flex flex-column align-items-center product-details">'+
-				'<span class="font-weight-bold">' + name + '</span>'+
+				'<span class="font-weight-bold d-none d-sm-block">' + name + '</span>'+
                                 //<div class="d-flex flex-row product-desc">
                                 //    <div class="size mr-1"><span class="text-grey">Size:</span><span class="font-weight-bold">&nbsp;M</span></div>
                                 //    <div class="color"><span class="text-grey">Color:</span><span class="font-weight-bold">&nbsp;Grey</span></div>
@@ -90,7 +90,7 @@ function doShowAll() {
 		}
 		//if no item exists in the cart
 		if (localStorage.length == 0) {
-			list = "<h3>There is no item</h3>";
+			list = "<h6 style='color:red'>There is no item</h6>";
 		}
 		//bind the data to html table
 		//you can use jQuery too....
@@ -150,12 +150,12 @@ function recalculateCartTotal() {
 	});
 	data = data.filter((c) => !isNaN(parseInt(c)));
 	var subtotal = eval(data.join("+"));
-	console.log(taxRate);
+	//console.log(taxRate);
 	/* Calculate totals */
 	var tax = subtotal * taxRate;
 	var shipping = (subtotal > 0 ? shippingRate : 0);
 	var total = subtotal + tax + shipping;
-
+	if (total>0)
 	/* Update totals display */
 	$('.totals-value').fadeOut(fadeTime, function () {
 		$('#cart-subtotal').html(subtotal.toFixed(2));
