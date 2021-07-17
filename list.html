@@ -25,10 +25,12 @@
 
     <link rel="stylesheet" href="css/jquery-ui.css">
     <style>
-        .col {
-            margin: 1px;
+        .p-info {
+            text-align:center;
         }
-
+        .p-info img {
+            max-height: 222px;
+        }
         /*.menu-item {
             background-color: #FEFEFE;
             width: 200px;
@@ -279,14 +281,14 @@
             max: 1000,
             values: [1, 1000],
             slide: function (event, ui) {
-                $("#amount").val("$" + ui.values[0] + " - $" + ui.values[1]);
+                $("#amount").val("৳" + ui.values[0] + " - ৳" + ui.values[1]);
                 var mi = ui.values[0];
                 var mx = ui.values[1];
                 filterSystem(mi, mx);
             }
         });
-        $("#amount").val("$" + $("#slider-range").slider("values", 0) +
-            " - $" + $("#slider-range").slider("values", 1));
+        $("#amount").val("৳" + $("#slider-range").slider("values", 0) +
+            " - ৳" + $("#slider-range").slider("values", 1));
 
 
 
@@ -311,9 +313,9 @@
 
         popupBtns.forEach((popupBtn, i) => {
             popupBtn.addEventListener("click", () => {
-                alert(window.location.hostname);
+                //alert(window.location.hostname);
                 //window.location.href = window.location.hostname + "/details.html#" + i;
-                window.location.href = "https://proviti.github.io//details.html#" + i;
+                window.location.href = "https://proviti.github.io/details.html#" + i;
             });
         });
 
