@@ -206,7 +206,7 @@
                         <div class="row" id="products">
                             <!--<div class="col-12"></div>-->
                             <div v-for="item in items" :key="item.id" class="col-xm-12 col-sm-6 col-md-3 col-lg-2">
-                                <div class="product-card">
+                                <div class="product-card" v-bind:data-price="item.disPrice" data-color="">
                                     <input type="hidden" v-bind:id="'p-'+item.id" v-bind:value="item.name + '%$^&' + item.price + '%$^&' + item.disPrice + '%$^&' + item.pic + '%$^&' + item.qty" />
                                     <div class="p-info">
                                         <img src="images/no-image.png" v-bind:data-original="'images/' + item.pic" class="product-img responsive" v-bind:alt="item.name" loading="lazy" />
@@ -251,7 +251,7 @@
             data: {
                 items: [
                     { id: 8, name: 'Baby Dress #00001', title: '', price: 100, pic: '8.jpg', disPrice: 90, qty: 1, remainQty: 1, desc: '' },
-                    { id: 9, name: 'Baby Dress #00002', title: '', price: 100, pic: '9.jpg', disPrice: 70, qty: 1, remainQty: 1, desc: '' },
+                    { id: 9, name: 'Baby Dress #00002', title: '', price: 80, pic: '9.jpg', disPrice: 70, qty: 1, remainQty: 1, desc: '' },
                     { id: 10, name: 'Baby Dress #00003', title: '', price: 50, pic: '10.jpg', disPrice: 50, qty: 1, remainQty: 1, desc: '' },
                     { id: 11, name: 'Baby Dress #00004', title: '', price: 80, pic: '11.jpg', disPrice: 80, qty: 1, remainQty: 1, desc: '' },
                     { id: 12, name: 'Baby Dress #00005', title: '', price: 100, pic: '12.jpg', disPrice: 90, qty: 1, remainQty: 1, desc: '' },
@@ -277,7 +277,7 @@
             range: true,
             min: 0,
             max: 1000,
-            values: [190, 728],
+            values: [1, 1000],
             slide: function (event, ui) {
                 $("#amount").val("$" + ui.values[0] + " - $" + ui.values[1]);
                 var mi = ui.values[0];
@@ -291,7 +291,7 @@
 
 
         function filterSystem(minPrice, maxPrice) {
-            $(".items div.item").hide().filter(function () {
+            $("#products div.product-card").hide().filter(function () {
                 var price = parseInt($(this).data("price"), 10);
                 return price >= minPrice && price <= maxPrice;
             }).show();
@@ -311,7 +311,9 @@
 
         popupBtns.forEach((popupBtn, i) => {
             popupBtn.addEventListener("click", () => {
-               window.location.href = window.location.hostname + "/details.html#" + i;
+                alert(window.location.hostname);
+                //window.location.href = window.location.hostname + "/details.html#" + i;
+                window.location.href = "https://proviti.github.io//details.html#" + i;
             });
         });
 

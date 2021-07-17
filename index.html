@@ -25,93 +25,11 @@
 </head>
 <body>
     <div id="miniCart" class="overlay"></div>
-    <nav class="navbar navbar-expand-lg navbar-light bg-green border-bottom fixed-top" style="padding:10px 0;" id="topnav"></nav>
+    <nav class="navbar navbar-expand-lg navbar-light bg-green border-bottom fixed-top" style="padding:5px 0;" id="topnav"></nav>
 
     <div class="d-flex" id="wrapper" style="min-height:100vh">
         <!-- Sidebar-->
-        <div class="bg-white" id="sidebar-wrapper">
-            <div id='cssmenu'>
-                <ul>
-                    <li class="d-block d-sm-none"><a href='#' style="color: #166d3b;font-size: 35px;text-align:center;font-weight:900;">ittadi Shop</a></li>
-                    <li><a href='#'><img class="menu-img" src="images/icons/po.gif" />Popular</a></li>
-                    <li class='has-sub'>
-                        <a href='#'><img class="menu-img" src="images/icons/dn.png" /> Daily Needs</a>
-                        <ul>
-                            <li class='has-sub'>
-                                <a href='#'>Beverages</a>
-                                <ul>
-                                    <li><a href='#'>Tea</a></li>
-                                    <li><a href='#'>Coffee</a></li>
-                                </ul>
-                            </li>
-                            <li><a href='#'>Fruits & Vegetables</a></li>
-                            <li><a href='#'>Eggs</a></li>
-                            <li><a href='#'>Biscuits</a></li>
-                            <li class='has-sub'>
-                                <a href='#'>Cooking</a>
-                                <ul>
-                                    <li><a href='#'>Rice</a></li>
-                                    <li><a href='#'>Oil</a></li>
-                                    <li><a href='#'>Spices</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class='has-sub'>
-                        <a href='#'><img class="menu-img" src="images/icons/fa.png" />Fashion</a>
-                        <ul>
-                            <li class='has-sub'>
-                                <a href='#'><img class="menu-img" src="images/icons/wf.png" />Women Fashion</a>
-                                <ul>
-                                    <li><a href='#'>Ready Cloth</a></li>
-                                    <li><a href='#'>Cloth</a></li>
-                                    <li><a href='#'>Cosmetics</a></li>
-                                    <li><a href='#'>Shoes</a></li>
-                                </ul>
-                            </li>
-                            <li class='has-sub'>
-                                <a href='#'><img class="menu-img" src="images/icons/mf.png" />Men Fashion</a>
-                                <ul>
-                                    <li><a href='#'>Ready Cloth</a></li>
-                                    <li><a href='#'>Cloth</a></li>
-                                    <li><a href='#'>Cosmetics</a></li>
-                                    <li><a href='#'>Shoes</a></li>
-                                </ul>
-                            </li>
-                            <li class='has-sub'>
-                                <a href='#'>Baby Shop</a>
-                                <ul>
-                                    <li><a href='#'>Ready Cloth</a></li>
-                                    <li><a href='#'>Diaper</a></li>
-                                    <li><a href='#'>Cosmetics</a></li>
-                                    <li><a href='#'>Shoes</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class='has-sub'>
-                        <a href='#'><img class="menu-img" src="images/icons/me.png" />Medicine</a>
-                        <ul>
-                            <li class='has-sub'>
-                                <a href='#'>Harbal</a>
-                                <ul>
-                                    <li><a href='#'>Sirap</a></li>
-                                    <li><a href='#'>Tablet</a></li>
-                                </ul>
-                            </li>
-                            <li class='has-sub'>
-                                <a href='#'>Alopathi</a>
-                                <ul>
-                                    <li><a href='#'>Sirap</a></li>
-                                    <li><a href='#'>Tablet</a></li>
-                                    <li><a href='#'>Capsule</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-        </div>
+        <section id="menu"></section>
         <!-- Page content wrapper      style="margin: 49px 0 0 230px;"-->
         <div id="page-content-wrapper">
             <!-- Top navigation-->
@@ -149,7 +67,7 @@
                             <legend class="title-border">
                                 Popular
                             </legend>
-                            <div class="legend2"><a href="#"><i class="fas fa-list"></i></a></div>
+                             <div class="legend2"><a href="https://proviti.github.io/list.html"><i class="fas fa-list"></i></a></div>
                             <div id="popular" class='outerWrapper'>
                                 <div class="product item" v-for="item in items" :key="item.id">
                                     <div class="product-card">
@@ -169,6 +87,7 @@
                                         </span>
                                         <span class="add2cart">
                                             <i class="fas fa-cart-plus cart-btn"></i>
+                                            <!--<i class="fas fa-book-open popup-btn d-none d-md-inline-block d-lg-inline-block d-xl-inline-block"></i>-->
                                             <i class="fas fa-book-open popup-btn"></i>
                                         </span>
                                     </div>
@@ -180,13 +99,13 @@
                                                     <div v-bind:id="'custCarousel-' + item.id" class="carousel product-slide custCarousel" data-ride="carousel" style="text-align:center">
                                                         <!-- slides -->
                                                         <div class="carousel-inner">
-                                                            <div class="carousel-item active"><img v-bind:src="'images/' + item.pic" v-bind:alt="item.name" loading="lazy" /> </div>
+                                                            <div class="carousel-item active">
+                                                                <img v-bind:src="'images/' + item.pic" v-bind:alt="item.name" loading="lazy" />
+                                                            </div>
                                                             <div class="carousel-item"> <img src="images/10.jpg" alt="Hills"> </div>
                                                             <div class="carousel-item"> <img src="images/11.jpg" alt="Hills"> </div>
                                                             <div class="carousel-item"> <img src="images/12.jpg" alt="Hills"> </div>
                                                         </div> <!-- Left right -->
-                                                        <!--<a class="carousel-control-prev" href="#custCarousel" data-slide="prev"> <span class="carousel-control-prev-icon"></span> </a>
-                                                        <a class="carousel-control-next" href="#custCarousel" data-slide="next"> <span class="carousel-control-next-icon"></span> </a>-->
                                                         <!-- Thumbnails -->
                                                         <ol class="carousel-indicators list-inline">
                                                             <li class="list-inline-item active"> <a id="carousel-selector-0" class="selected" data-slide-to="0" v-bind:data-target="'#custCarousel-'+ item.id"><img v-bind:src="'images/' + item.pic" v-bind:alt="item.name" class="img-fluid" loading="lazy" /> </a> </li>
@@ -218,7 +137,7 @@
                             <legend class="title-border">
                                 Daily Needs
                             </legend>
-                            <div class="legend2"><a href="#"><i class="fas fa-list"></i></a></div>
+                             <div class="legend2"><a href="https://proviti.github.io/list.html"><i class="fas fa-list"></i></a></div>
                             <div id="daily-needs" class='outerWrapper'>
                                 <div class="product item" v-for="item in items" :key="item.id">
                                     <div class="product-card">
@@ -268,7 +187,7 @@
                             <legend class="title-border">
                                 Foods
                             </legend>
-                            <div class="legend2"><a href="#"><i class="fas fa-list"></i></a></div>
+                             <div class="legend2"><a href="https://proviti.github.io/list.html"><i class="fas fa-list"></i></a></div>
                             <div id="foods" class='outerWrapper'>
                                 <div class="product item" v-for="item in items" :key="item.id">
                                     <div class="product-card">
@@ -318,7 +237,7 @@
                             <legend class="title-border">
                                 Fashion
                             </legend>
-                            <div class="legend2"><a href="#"><i class="fas fa-list"></i></a></div>
+                             <div class="legend2"><a href="https://proviti.github.io/list.html"><i class="fas fa-list"></i></a></div>
                             <div id="fashion" class='outerWrapper'>
                                 <div class="product item" v-for="item in items" :key="item.id">
                                     <div class="product-card">
@@ -368,7 +287,7 @@
                             <legend class="title-border">
                                 Medicine
                             </legend>
-                            <div class="legend2"><a href="#"><i class="fas fa-list"></i></a></div>
+                            <div class="legend2"><a href="https://proviti.github.io/list.html"><i class="fas fa-list"></i></a></div>
                             <div id="medicine" class='outerWrapper'>
                                 <div class="product item" v-for="item in items" :key="item.id">
                                     <div class="product-card">
@@ -516,7 +435,10 @@
 
         popupBtns.forEach((popupBtn, i) => {
             popupBtn.addEventListener("click", () => {
-                popup(i);
+                let w = $(window).width();
+                if (w > 700)
+                    popup(i);
+                else window.location.href = window.location.hostname + "/details/" + i;
             });
         });
 
@@ -576,6 +498,12 @@
             });
     </script>
     <script>
+        function searchToggle() {
+            // $(".fa-search").click(function () {
+            $(".togglesearch").toggle();
+            $(".togglesearch input").focus();
+            //});
+        }
         // This is "probably" IE9 compatible but will need some fallbacks for IE8
         // - (event listeners, forEach loop)
 
@@ -617,5 +545,6 @@
     <script src="pages/footer.js"></script>
     <script src="pages/minicart.js"></script>
     <script src="pages/nav.js"></script>
+    <script src="pages/menu.js"></script>
 </body>
 </html>
