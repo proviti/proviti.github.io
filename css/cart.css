@@ -58,6 +58,22 @@ label {
     width: 175px;
     overflow: hidden;
 }
+#miniCart {
+    /* min-width: 40rem;
+    padding: 1px 5px;*/
+    height: 100vh;
+    overflow-y: scroll;
+}
+/* Hide scrollbar for Chrome, Safari and Opera */
+#miniCart::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+#miniCart {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
 /*.product .product-details .product-title {
   margin-right: 20px;
   font-family: "HelveticaNeue-Medium", "Helvetica Neue Medium";

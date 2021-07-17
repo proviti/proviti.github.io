@@ -1,56 +1,33 @@
-/*
-body {
-    height: 90vh;
-    overflow-y: scroll
-}*/
-/* Hide scrollbar for Chrome, Safari and Opera */
-body::-webkit-scrollbar {
+#cssmenu::-webkit-scrollbar {
     display: none;
 }
-
 /* Hide scrollbar for IE, Edge and Firefox */
-body {
+#cssmenu {
     -ms-overflow-style: none; /* IE and Edge */
     scrollbar-width: none; /* Firefox */
 }
 /* width */
-::-webkit-scrollbar {
+/*::-webkit-scrollbar {
     width: 10px;
-}
+}*/
 
 /* Track */
-::-webkit-scrollbar-track {
+/*::-webkit-scrollbar-track {
     background: #fff;
-}
+}*/
 
 /* Handle */
-::-webkit-scrollbar-thumb {
+/*::-webkit-scrollbar-thumb {
     background-color: #166d3b;
     background-image: linear-gradient( 147deg, #166d3b 0%, #000000 74%);
-}
+}*/
 
 /* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
+/*::-webkit-scrollbar-thumb:hover {
     background-color: #166d3b;
-}
+}*/
 
-#miniCart {
-   /* min-width: 40rem;
-    padding: 1px 5px;*/
-    height: 100vh;
-    overflow-y: scroll;
-    
-}
-/* Hide scrollbar for Chrome, Safari and Opera */
-#miniCart::-webkit-scrollbar {
-    display: none;
-}
 
-/* Hide scrollbar for IE, Edge and Firefox */
-#miniCart {
-    -ms-overflow-style: none; /* IE and Edge */
-    scrollbar-width: none; /* Firefox */
-}
 
 .jcarousel-control {
     top: -35px;
@@ -59,58 +36,6 @@ body {
 .jcarousel-control-prev {
     margin-left: 90%;
 }
-
-.carousal-fieldset {
-    padding: 5px;
-    display: inline-block;
-    height: 320px;
-    margin-bottom: 10px;
-}
-
-.carousal-fieldset legend.title-border {
-    background-color: #166d3b;
-    background-image: linear-gradient(147deg, #166d3b 0%, #000000 74%);
-    color: white;
-    padding: 5px 10px;
-    width: 225px;
-    font-size: 20px;
-}
-
-
-/*.fieldset {
-            position: relative;
-            border: 1px solid #ddd;
-            padding: 1rem;
-        }
-
-            .fieldset h3 {
-                position: absolute;
-                top: 0;
-                font-size: 18px;
-                line-height: 1;
-                margin: -9px 0 0 -0.5rem;*/ /* half of font-size up top */
-/*background-color: #166d3b;
-                background-image: linear-gradient(147deg, #166d3b 0%, #000000 74%);
-                padding: 0 0.5rem;
-                color: white;
-                padding: 10px;
-                width: 200px;
-            }*/
-.legend2 {
-    position: relative;
-    top: -44px;
-    background: #fff;
-    line-height: 1.2em;
-    float: right;
-    right: 1%;
-}
-
-    .legend2 a i {
-        font-size: 35px;
-        color: orange;
-    }
-       
-
 
 /*@media screen and (min-width: 1001px) {
     .legend2 {
