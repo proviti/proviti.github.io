@@ -1,0 +1,84 @@
+let menu = '<div class="bg-white" id="sidebar-wrapper">                                                                                                    '+                                         
+    '<div id="cssmenu">                                                                                                                                    '+
+    '    <ul>                                                                                                                                              '+
+    '        <li class="d-block d-sm-none"><a href="#" style="color: #166d3b;font-size: 35px;text-align:center;font-weight:900;">ittadi Shop</a></li>      '+
+    '        <li><a href="#"><img class="menu-img" src="images/icons/po.gif" />Popular</a></li>                                                            '+
+    '        <li class="has-sub">                                                                                                                          '+
+    '            <a href="#"><img class="menu-img" src="images/icons/dn.png" /> Daily Needs</a>                                                            '+
+    '            <ul>                                                                                                                                      '+
+    '                <li class="has-sub">                                                                                                                  '+
+    '                    <a href="#">Beverages</a>                                                                                                         '+
+    '                    <ul>                                                                                                                              '+
+    '                        <li><a href="#">Tea</a></li>                                                                                                  '+
+    '                        <li><a href="#">Coffee</a></li>                                                                                               '+
+    '                    </ul>                                                                                                                             '+
+    '                </li>                                                                                                                                 '+
+    '                <li><a href="#">Fruits & Vegetables</a></li>                                                                                          '+
+    '                <li><a href="#">Eggs</a></li>                                                                                                         '+
+    '                <li><a href="#">Biscuits</a></li>                                                                                                     '+
+    '                <li class="has-sub">                                                                                                                  '+
+    '                    <a href="#">Cooking</a>                                                                                                           '+
+    '                    <ul>                                                                                                                              '+
+    '                        <li><a href="#">Rice</a></li>                                                                                                 '+
+    '                        <li><a href="#">Oil</a></li>                                                                                                  '+
+    '                        <li><a href="#">Spices</a></li>                                                                                               '+
+    '                    </ul>                                                                                                                             '+
+    '                </li>                                                                                                                                 '+
+    '            </ul>                                                                                                                                     '+
+    '        </li>                                                                                                                                         '+
+    '        <li class="has-sub">                                                                                                                          '+
+    '            <a href="#"><img class="menu-img" src="images/icons/fa.png" />Fashion</a>                                                                 '+
+    '            <ul>                                                                                                                                      '+
+    '                <li class="has-sub">                                                                                                                  '+
+    '                    <a href="#"><img class="menu-img" src="images/icons/wf.png" />Women Fashion</a>                                                   '+
+    '                    <ul>                                                                                                                              '+
+    '                        <li><a href="#">Ready Cloth</a></li>                                                                                          '+
+    '                        <li><a href="#">Cloth</a></li>                                                                                                '+
+    '                        <li><a href="#">Cosmetics</a></li>                                                                                            '+
+    '                        <li><a href="#">Shoes</a></li>                                                                                                '+
+    '                    </ul>                                                                                                                             '+
+    '                </li>                                                                                                                                 '+
+    '                <li class="has-sub">                                                                                                                  '+
+    '                    <a href="#"><img class="menu-img" src="images/icons/mf.png" />Men Fashion</a>                                                     '+
+    '                    <ul>                                                                                                                              '+
+    '                        <li><a href="#">Ready Cloth</a></li>                                                                                          '+
+    '                        <li><a href="#">Cloth</a></li>                                                                                                '+
+    '                        <li><a href="#">Cosmetics</a></li>                                                                                            '+
+    '                        <li><a href="#">Shoes</a></li>                                                                                                '+
+    '                    </ul>                                                                                                                             '+
+    '                </li>                                                                                                                                 '+
+    '                <li class="has-sub">                                                                                                                  '+
+    '                    <a href="#">Baby Shop</a>                                                                                                         '+
+    '                    <ul>                                                                                                                              '+
+    '                        <li><a href="#">Ready Cloth</a></li>                                                                                          '+
+    '                        <li><a href="#">Diaper</a></li>                                                                                               '+
+    '                        <li><a href="#">Cosmetics</a></li>                                                                                            '+
+    '                        <li><a href="#">Shoes</a></li>                                                                                                '+
+    '                    </ul>                                                                                                                             '+
+    '                </li>                                                                                                                                 '+
+    '            </ul>                                                                                                                                     '+
+    '        </li>                                                                                                                                         '+
+    '        <li class="has-sub">                                                                                                                          '+
+    '            <a href="#"><img class="menu-img" src="images/icons/me.png" />Medicine</a>                                                                '+
+    '            <ul>                                                                                                                                      '+
+    '                <li class="has-sub">                                                                                                                  '+
+    '                    <a href="#">Harbal</a>                                                                                                            '+
+    '                    <ul>                                                                                                                              '+
+    '                        <li><a href="#">Sirap</a></li>                                                                                                '+
+    '                        <li><a href="#">Tablet</a></li>                                                                                               '+
+    '                    </ul>                                                                                                                             '+
+    '                </li>                                                                                                                                 '+
+    '                <li class="has-sub">                                                                                                                  '+
+    '                    <a href="#">Alopathi</a>                                                                                                          '+
+    '                    <ul>                                                                                                                              '+
+    '                        <li><a href="#">Sirap</a></li>                                                                                                '+
+    '                        <li><a href="#">Tablet</a></li>                                                                                               '+
+    '                        <li><a href="#">Capsule</a></li>                                                                                              ' +
+        '                    </ul>                                                                                                                             ' +
+        '                </li>                                                                                                                                 ' +
+        '            </ul>                                                                                                                                     ' +
+        '        </li>                                                                                                                                         ' +
+        '    </ul>                                                                                                                                             ' +
+        '</div>                                                                                                                                                ' +
+    '</div>                                                                                                                                                ';
+document.getElementById('menu').innerHTML = menu;
