@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>ittadi store</title>
+        <link rel="icon" type="image/x-icon" href="assets/favicon.svg" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+        <link rel="stylesheet" href="css/styles.css" />
+        <link rel="stylesheet" href="css/custom.css" />
+        <link rel="stylesheet" href="css/menu.css" />
+        <link rel="stylesheet" href="css/product.css">
+        <link rel="stylesheet" href="css/slider.css">
+        <link rel="stylesheet" href="css/cart.css">
+        <link rel="stylesheet" href="css/added2cart.css">
+        <link rel="stylesheet" href="css/signupin.css">
+        <link rel="stylesheet" href="css/carousel.css" />
+        <link rel="stylesheet" href="css/zoom.css">
+        <link rel="stylesheet" href="css/footer.css">
+        <link rel="stylesheet" href="css/footer-animate.min.css" />
+        <link rel="stylesheet" href="css/footer-themify-icons.css">
+        <link rel="stylesheet" href="css/product-details-slide.css">
+
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <style>
+        .col {
+            margin: 1px;
+        }
+
+        /*.menu-item {
+            background-color: #FEFEFE;
+            width: 200px;
+            height: 150px;
+            margin: 10px;
+            border-radius: 3px;
+            box-shadow: 0 0 8px rgba(0, 0, 0, 0.06);
+        }*/
+
+        .header-item {
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: #3C3D41;
+            font-size: 11px;
+            padding: 15px 15px;
+            border-bottom: 1.5px solid #EAEAEA;
+        }
+
+        .color-row1, .color-row2 {
+            margin: 15px;
+            padding: 0;
+            max-width: 220px;
+        }
+
+        .color-circle {
+            max-width: 220px;
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            border-radius: 50px 50px 50px 50px;
+        }
+
+        .size-circle {
+            background-color: #EBEBEB;
+        }
+
+        .sizedouble {
+            margin: 5px 5px;
+        }
+
+        .size {
+            margin: 6px 8px;
+        }
+
+        /*ITEMS!!!*/
+       /* img {
+            width: 100px;
+            height: 130px;
+            margin-top: 10px;
+            vertical-align: top;
+            position: relative;
+            left: 50px;
+        }*/
+
+        /*.items {
+            width: 650px;
+            margin: 5px;
+            display: inline-block;
+        }
+
+        .item {
+            vertical-align: top;
+            width: 190px;
+            height: 240px;
+            margin: 8px;
+            background: #FEFEFE;
+            display: inline-block;
+            border-radius: 3px;
+            box-shadow: 0 0 8px rgba(0, 0, 0, 0.06);
+        }*/
+
+       /* h3 {
+            text-align: center;
+            margin-bottom: 5px;
+            margin-left: 5px;
+            margin-right: 5px;
+            font-size: 1em;
+        }
+
+        h5 {
+            position: relative;
+            bottom: 10px;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .descroption {
+            margin: 0;
+            text-align: center;
+            font-size: 11px;
+            font-style: italic;
+            color: grey;
+            font-family: sans-serif;
+        }*/
+
+
+        /*BTN*/
+        .loadmore {
+            height: 30px;
+            width: 610px;
+            margin-top: 25px;
+            position: relative;
+            left: 8px;
+            text-decoration: none;
+            font-size: 15px;
+            background-color: #B8C6C7;
+            color: #FEFEFE;
+            border-radius: 4px;
+            border: none;
+            font-family: 'Roboto', sans-serif;
+        }
+        .ui-slider .ui-slider-handle {
+            position: absolute;
+            z-index: 2;
+            width: 0.9em;
+            height: 1.6em;
+            cursor: default;
+            outline: none;
+            border: 1px solid rgb(207, 207, 207);
+            background: #090;
+            border-image: initial;
+        }
+    </style>
+</head>
+<body>
+    <div id="miniCart" class="overlay"></div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-green border-bottom fixed-top" style="padding:5px 0;" id="topnav"></nav>
+    <div class="d-flex" id="wrapper" style="min-height:100vh">
+        <!--<section id="menu"></section>-->
+        <div id="page-content-wrapper">
+            <div class="container-fluid" style="margin:50px 0;">
+                <div class="row">
+                    <div class="col-2">
+                        <div class="menu">
+
+                            <div class="menu-colors menu-item">
+                                <div class="header-item">Colors</div>
+                                <ul class="color-row1">
+                                    <li class="color-circle" data-color="black" style="background:#4286f4"></li>
+                                    <li class="color-circle" data-color="yellow" style="background:#2acc4b"></li>
+                                    <li class="color-circle" data-color="green" style="background:#343534"></li>
+                                    <li class="color-circle" data-color="white" style="background:#5f605f"></li>
+                                    <li class="color-circle" data-color="orange" style="background:#929392"></li>
+                                </ul>
+                                <ul class="color-row2">
+                                    <li class="color-circle" style="background:#9e8045"></li>
+                                    <li class="color-circle" style="background:#d3d3d3"></li>
+                                    <li class="color-circle" style="background:#6b6666"></li>
+                                    <li class="color-circle" style="background:#999797"></li>
+                                    <li class="color-circle" style="background:#923476"></li>
+                                </ul>
+                            </div>
+                            <div class="menu-size menu-item">
+                                <div class="header-item">Size</div>
+                                <ul class="color-row1">
+                                    <li class="color-circle size-circle"><p class="sizedouble">XS</p></li>
+                                    <li class="color-circle size-circle" style="background-color:#343534"><p style="color:#999" class="size">S</p></li>
+                                    <li class="color-circle size-circle"><p class="size">M</p></li>
+                                    <li class="color-circle size-circle"><p class="size">L</p></li>
+                                    <li class="color-circle size-circle"><p class="sizedouble">XL</p></li>
+                                </ul>
+                            </div>
+                            <div class="menu-price menu-item">
+                                <div class="header-item">Price</div>
+                                <p>
+                                    <!--<label for="amount">Price range:</label>-->
+                                    <input type="text" readonly id="amount" style="border:0; color:#f6931f; font-weight:bold;">
+                                </p>
+                                <div id="slider-range"></div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-10">
+                        <div class="row" id="products">
+                            <!--<div class="col-12"></div>-->
+                            <div v-for="item in items" :key="item.id" class="col-xm-12 col-sm-6 col-md-3 col-lg-2">
+                                <div class="product-card">
+                                    <input type="hidden" v-bind:id="'p-'+item.id" v-bind:value="item.name + '%$^&' + item.price + '%$^&' + item.disPrice + '%$^&' + item.pic + '%$^&' + item.qty" />
+                                    <div class="p-info">
+                                        <img src="images/no-image.png" v-bind:data-original="'images/' + item.pic" class="product-img responsive" v-bind:alt="item.name" loading="lazy" />
+                                        <h6 class="name">{{item.name}}</h6>
+                                        <del v-if="item.price > item.disPrice">
+                                            <span class="amount">৳ {{item.price}}</span>
+                                        </del>
+                                        <ins>
+                                            <span class="amount">৳ {{item.disPrice}}</span>
+                                        </ins>
+                                    </div>
+                                    <span class="added2cart">
+                                        <input class="checkbox" type="checkbox" />
+                                    </span>
+                                    <span class="add2cart">
+                                        <i class="fas fa-cart-plus cart-btn"></i>
+                                        <i class="fas fa-book-open popup-btn"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <footer class="new_footer_area bg_color" id="footer_html_render"></footer>
+    <script src='js/jquery.min.js'></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src='js/bootstrap.min.js'></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/menu.js"></script>
+
+
+
+    <script src='js/vue@2.js'></script>
+    <script type="text/javascript">
+        var popular = new Vue({
+            el: '#products',
+            data: {
+                items: [
+                    { id: 8, name: 'Baby Dress #00001', title: '', price: 100, pic: '8.jpg', disPrice: 90, qty: 1, remainQty: 1, desc: '' },
+                    { id: 9, name: 'Baby Dress #00002', title: '', price: 100, pic: '9.jpg', disPrice: 70, qty: 1, remainQty: 1, desc: '' },
+                    { id: 10, name: 'Baby Dress #00003', title: '', price: 50, pic: '10.jpg', disPrice: 50, qty: 1, remainQty: 1, desc: '' },
+                    { id: 11, name: 'Baby Dress #00004', title: '', price: 80, pic: '11.jpg', disPrice: 80, qty: 1, remainQty: 1, desc: '' },
+                    { id: 12, name: 'Baby Dress #00005', title: '', price: 100, pic: '12.jpg', disPrice: 90, qty: 1, remainQty: 1, desc: '' },
+                    { id: 13, name: 'Baby Dress #00006', title: '', price: 170, pic: '13.jpg', disPrice: 170, qty: 1, remainQty: 1, desc: '' },
+                    { id: 14, name: 'Baby Dress #00007', title: '', price: 170, pic: '14.jpg', disPrice: 170, qty: 1, remainQty: 1, desc: '' },
+                    { id: 15, name: 'Baby Dress #00008', title: '', price: 170, pic: '15.jpg', disPrice: 170, qty: 1, remainQty: 1, desc: '' },
+                    { id: 16, name: 'Baby Dress #00009', title: '', price: 170, pic: '16.jpg', disPrice: 170, qty: 1, remainQty: 1, desc: '' },
+                    { id: 17, name: 'Baby Dress #00010', title: '', price: 170, pic: '17.jpg', disPrice: 170, qty: 1, remainQty: 1, desc: '' },
+                    { id: 18, name: 'Hepanal', title: '', price: 140, pic: '18.jpg', disPrice: 140, qty: 1, remainQty: 1, desc: '' },
+                    { id: 19, name: 'Tissue', title: 'Tissue', price: 45, pic: '19.webp', disPrice: 45, qty: 2000, remainQty: 2000, desc: '' },
+                    { id: 20, name: 'Meat', title: 'Tissue', price: 600, pic: '20.webp', disPrice: 590, qty: 2000, remainQty: 2000, desc: '' },
+                    { id: 21, name: 'BooChola Boot', title: 'Tissue', price: 100, pic: '21.webp', disPrice: 100, qty: 2000, remainQty: 2000, desc: '' },
+                    { id: 22, name: 'Cumin Seed (Jira)', title: 'Tissue', price: 600, pic: '22.webp', disPrice: 600, qty: 2000, remainQty: 2000, desc: '' },
+                    { id: 23, name: 'Tea', title: 'Ispahani Tea', price: 210, pic: '23.webp', disPrice: 200, qty: 2000, remainQty: 2000, desc: '' },
+                    { id: 24, name: 'Dal', title: 'Moshur Dal', price: 100, pic: '24.webp', disPrice: 95, qty: 2000, remainQty: 2000, desc: '' },
+                    { id: 7, name: 'Pizza', title: 'Delicias pizza', price: 100, pic: '7.jpg', disPrice: 90, qty: 2, remainQty: 2, desc: '' },
+                    { id: 25, name: 'Doi/Card', title: 'Sweet Doi/Card', price: 100, pic: '7.jpg', disPrice: 90, qty: 2, remainQty: 2, desc: '' },
+                    { id: 26, name: 'Cake', title: 'Delicias pizza', price: 100, pic: '7.jpg', disPrice: 90, qty: 2, remainQty: 2, desc: '' },
+                ]
+            }
+        });
+        $("#slider-range").slider({
+            range: true,
+            min: 0,
+            max: 1000,
+            values: [190, 728],
+            slide: function (event, ui) {
+                $("#amount").val("$" + ui.values[0] + " - $" + ui.values[1]);
+                var mi = ui.values[0];
+                var mx = ui.values[1];
+                filterSystem(mi, mx);
+            }
+        });
+        $("#amount").val("$" + $("#slider-range").slider("values", 0) +
+            " - $" + $("#slider-range").slider("values", 1));
+
+
+
+        function filterSystem(minPrice, maxPrice) {
+            $(".items div.item").hide().filter(function () {
+                var price = parseInt($(this).data("price"), 10);
+                return price >= minPrice && price <= maxPrice;
+            }).show();
+        }
+
+        $('.menu-colors').on('click', 'li', function (e, ui) {
+            var filterColor = $(this).data("color");
+            $(".items div.item").hide().filter(function () {
+                var color = $(this).data("color");
+                //console.log(filterColor, color);
+                return color == filterColor;
+            }).show();
+        });
+
+        var popupBtns = document.querySelectorAll('.popup-btn');
+        var closeBtns = document.querySelectorAll('.close-btn');
+
+        popupBtns.forEach((popupBtn, i) => {
+            popupBtn.addEventListener("click", () => {
+               window.location.href = window.location.hostname + "/details.html#" + i;
+            });
+        });
+
+        //javascript for close button
+        closeBtns.forEach((closeBtn) => {
+            closeBtn.addEventListener("click", () => {
+                popupViews.forEach((popupView) => {
+                    popupView.classList.remove('active');
+                });
+            });
+        });
+
+
+
+        $(document).ready(function ($) {
+            /*$('.product-slide .active').zoom();*/
+            $('.added2cart .checkbox').click(function () {
+                if (!$(this).prop('checked')) {
+                    $('added2cart').hide();
+                    $(this).hide();
+                    $('.add2cart').show();
+                }
+            });
+        });
+
+
+        function showMiniCart() {
+            window.open('#miniCart', '_self');
+            doShowAll();
+        }
+        $("#miniCart").ready(
+            function () {
+                doShowAll();
+            });
+        function searchToggle() {
+            // $(".fa-search").click(function () {
+            $(".togglesearch").toggle();
+            $(".togglesearch input").focus();
+            //});
+        }
+        // This is "probably" IE9 compatible but will need some fallbacks for IE8
+        // - (event listeners, forEach loop)
+
+        // wait for the entire page to finish loading
+        window.addEventListener('load', function () {
+
+            // setTimeout to simulate the delay from a real page load
+            setTimeout(lazyLoad, 1000);
+
+        });
+
+        function lazyLoad() {
+            var card_images = document.querySelectorAll('.p-info img');
+
+            // loop over each card image
+            card_images.forEach(function (card_image) {
+
+                var image_url = card_image.getAttribute('data-original');
+                //var content_image = card_image.getAttribute('src'); //card_image.querySelector('img');
+                // change the src of the content image to load the new high res photo
+                card_image.src = image_url;
+            });
+
+        }
+    </script>
+    <script type="text/javascript" src="js/Storage.js"></script>
+    <script type="text/javascript" src="js/add2cart.cartfly.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/signupin.js"></script>
+    <script src="pages/footer.js"></script>
+    <script src="pages/minicart.js"></script>
+    <script src="pages/nav.js"></script>
+    <script src="pages/menu.js"></script>
+</body>
+</html>
