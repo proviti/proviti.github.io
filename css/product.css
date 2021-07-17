@@ -118,16 +118,16 @@ ins {
 .popup-card {
     margin: 120px 20px;
 }
-.product .popup-card .product-img {
-    z-index: 9999999999999;
+.product .popup-card .product-img .product-slide .carousel-inner .active {
+    /*z-index: 9999999999999;*/
     background: #1D212B;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 45%;
-    height: 90%;
-    transform: translateY(25px);
+    /*width: 45%;*/
+    height: 55vh;
+    /*transform: translateY(25px);*/
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
 }
@@ -136,7 +136,7 @@ ins {
   z-index: 2;
   position: relative;
   width: 450px;
-  left: -50px;
+  margin:0 auto;
 }
 
 .product .popup-card .info {

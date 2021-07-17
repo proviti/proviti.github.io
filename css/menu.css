@@ -193,6 +193,53 @@
     transform: rotate(45deg) translate(-2px, -6px);
 }
 
+
+
+.togglesearch {
+    background: none;
+    position: fixed;
+    top: 55px;
+    right: 8%;
+    width: 80%;
+    /*height: 60px;
+    line-height: 60px;*/
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    border-top: 4px solid #166d3b;
+    display: none;
+}
+
+    .togglesearch:before {
+        content: "";
+        position: absolute;
+        top: -30px;
+        right: 40px;
+        border-left: 12px solid transparent;
+        border-right: 12px solid transparent;
+        border-top: 14px solid transparent;
+        border-bottom: 14px solid #166d3b;
+    }
+
+    .togglesearch input[type="text"] {
+        width: calc(100% - 80px);
+        padding: 5px 10px;
+        /*margin-left: 23px;*/
+        border: 1px solid #166d3b;
+        outline: none;
+    }
+
+    .togglesearch button{
+        width: 86px;
+        padding: 5px 0;
+        background: #166d3b;
+        color: wheat;
+        margin-left: -6px;
+        /*border: 1px solid #166d3b;*/
+        outline: none;
+        cursor: pointer;
+    }
+
+
+
 @media screen and (min-width: 600px ) and (max-width:1200px){
     .hamburger {
         margin:0 0 0 25%;
