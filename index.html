@@ -20,8 +20,27 @@
     <link rel="stylesheet" href="css/zoom.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/footer-animate.min.css" />
-    <link rel="stylesheet" href="css/footer-themify-icons.css">
-    <link rel="stylesheet" href="css/product-details-slide.css">
+    <link rel="stylesheet" href="css/footer-themify-icons.css"/>
+    <link rel="stylesheet" href="css/product-details-slide.css"/>
+    <style>
+        #num-cart-product {
+            top: -15px;
+            right: -17px;
+            position: absolute;
+            background-color: red;
+            border-radius: 50%;
+            width: 23px;
+            height: 23px;
+            font-size: 0.8rem;
+            font-weight: 300;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .fa-shopping-cart{
+            position:relative;
+        }
+    </style>
 </head>
 <body>
     <div id="miniCart" class="overlay"></div>
@@ -67,7 +86,7 @@
                             <legend class="title-border">
                                 Popular
                             </legend>
-                             <div class="legend2"><a href="https://proviti.github.io/list.html"><i class="fas fa-list"></i></a></div>
+                            <div class="legend2"><a href="https://proviti.github.io/list.html"><i class="fas fa-list"></i></a></div>
                             <div id="popular" class='outerWrapper'>
                                 <div class="product item" v-for="item in items" :key="item.id">
                                     <div class="product-card">
@@ -137,7 +156,7 @@
                             <legend class="title-border">
                                 Daily Needs
                             </legend>
-                             <div class="legend2"><a href="https://proviti.github.io/list.html"><i class="fas fa-list"></i></a></div>
+                            <div class="legend2"><a href="https://proviti.github.io/list.html"><i class="fas fa-list"></i></a></div>
                             <div id="daily-needs" class='outerWrapper'>
                                 <div class="product item" v-for="item in items" :key="item.id">
                                     <div class="product-card">
@@ -187,7 +206,7 @@
                             <legend class="title-border">
                                 Foods
                             </legend>
-                             <div class="legend2"><a href="https://proviti.github.io/list.html"><i class="fas fa-list"></i></a></div>
+                            <div class="legend2"><a href="https://proviti.github.io/list.html"><i class="fas fa-list"></i></a></div>
                             <div id="foods" class='outerWrapper'>
                                 <div class="product item" v-for="item in items" :key="item.id">
                                     <div class="product-card">
@@ -237,7 +256,7 @@
                             <legend class="title-border">
                                 Fashion
                             </legend>
-                             <div class="legend2"><a href="https://proviti.github.io/list.html"><i class="fas fa-list"></i></a></div>
+                            <div class="legend2"><a href="https://proviti.github.io/list.html"><i class="fas fa-list"></i></a></div>
                             <div id="fashion" class='outerWrapper'>
                                 <div class="product item" v-for="item in items" :key="item.id">
                                     <div class="product-card">
@@ -339,6 +358,7 @@
 
 
     <script src='js/jquery.min.js'></script>
+    <script src="js/jquery-ui.js"></script>
     <script src="js/zoom.min.js"></script>
     <script src='js/vue@2.js'></script>
     <script>
@@ -411,7 +431,7 @@
         //    }
         //})
     </script>
-    <script src="js/jquery-ui.js"></script>
+
     <!--Bootstrap core JS-->
     <script src='js/bootstrap.min.js'></script>
     <script src="js/bootstrap.bundle.min.js"></script>
@@ -476,24 +496,13 @@
             autoPause: 5000,
         });
 
-        $(document).ready(function ($) {
-            /*$('.product-slide .active').zoom();*/
-            $('.added2cart .checkbox').click(function () {
-                if (!$(this).prop('checked')) {
-                    $('added2cart').hide();
-                    $(this).hide();
-                    $('.add2cart').show();
-                }
-            });
-        });
-
+     
 
         function showMiniCart() {
             window.open('#miniCart', '_self');
             doShowAll();
         }
-        $("#miniCart").ready(
-            function () {
+        $("#miniCart").ready( function () {
                 doShowAll();
             });
     </script>
