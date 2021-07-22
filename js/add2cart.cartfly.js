@@ -51,7 +51,12 @@ $('.add-cart-btn').on('click', function () {
     let checkBox = pc.find(".checkbox").eq(0);
     checkBoxCkecked(checkBox);
 });
-
+$('.added2cart .checkbox').click(function () {
+    if (!$(this).prop('checked')) {
+        $(this).parent('.added2cart').hide();
+        $(this).parent('.added2cart').next('.add2cart').show();
+    }
+});
 function checkBoxCkecked(checkBox) {
     checkBox.show();
     checkBox.prop("checked", true);
