@@ -153,6 +153,9 @@
             background: #090;
             border-image: initial;
         }
+        del.list-page:before {
+            left: 43px;
+        }
     </style>
 </head>
 <body>
@@ -213,7 +216,7 @@
                                     <div class="p-info">
                                         <img src="images/no-image.png" v-bind:data-original="'images/' + item.pic" class="product-img responsive" v-bind:alt="item.name" loading="lazy" />
                                         <h6 class="name">{{item.name}}</h6>
-                                        <del v-if="item.price > item.disPrice">
+                                        <del v-if="item.price > item.disPrice" class="list-page">
                                             <span class="amount">৳ {{item.price}}</span>
                                         </del>
                                         <ins>
