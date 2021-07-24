@@ -36,7 +36,24 @@
 .jcarousel-control-prev {
     margin-left: 90%;
 }
+#num-cart-product {
+    top: -15px;
+    right: -17px;
+    position: absolute;
+    background-color: red;
+    border-radius: 50%;
+    width: 23px;
+    height: 23px;
+    font-size: 0.8rem;
+    font-weight: 300;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.fa-shopping-cart {
+    position: relative;
+}
 /*@media screen and (min-width: 1001px) {
     .legend2 {
         right: 1%;
