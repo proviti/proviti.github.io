@@ -14,28 +14,24 @@
 }
 
 .left-nav-btn, .right-nav-btn {
-    position: relative;
-    /*top: -60px;*/
+    position: absolute;
+    top: -5px;
     cursor: pointer;
     opacity: 0.8;
     font-family: 'Font Awesome\ 5 Free';
     font-size: 35px;
     color: wheat;
     font-weight: 900;
+    float:right;
 }
 .left-nav-btn {
-    /*left:15%;*/
-    /*margin: 17px 175px 0;*/
-    margin: -317px 170px;
+   right:25px;
 }
 .left-nav-btn:before {
     content: "\f104";
 }
 .right-nav-btn {
-    margin: 265px 0 0 200px;
-    /*background-position: top right;
-	float: left;
-	left: 190px;*/
+   right:5px;
 }
     .right-nav-btn:before {
         content: "\f105";
