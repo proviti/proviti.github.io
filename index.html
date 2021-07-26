@@ -605,6 +605,7 @@
                 //prevents browser from storing history with each change:
                 //window.history.replaceState({}, title, url);
                 //url = window.location.pathname + '/' + url;
+                window.history.pushState('', '', 'https://proviti.github.io/list.html');
                 const newUrl = new URL('https://proviti.github.io/list.html'); //window.location
                 window.history.pushState({ page: "list" }, title, newUrl);
             }
