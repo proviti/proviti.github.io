@@ -89,7 +89,7 @@
                                 <legend class="title-border">
                                     Popular
                                 </legend>
-                                <div class="legend2"><a href="javascript:void(0)" onclick="ChangeUrl('All Populars', 'list.html');"><i class="fas fa-list"></i></a></div>
+                                <div class="legend2"><a href="javascript:void(0)" onclick="ChangeUrl('All Populars', 'https://proviti.github.io/list.html');"><i class="fas fa-list"></i></a></div>
                                 <div id="popular" class='outerWrapper'>
                                     <div class="product product-item" v-for="item in items" :key="item.id">
                                         <div class="product-card">
@@ -605,9 +605,9 @@
                 //prevents browser from storing history with each change:
                 //window.history.replaceState({}, title, url);
                 //url = window.location.pathname + '/' + url;
-                window.history.pushState('', '', 'https://proviti.github.io/list.html');
-                const newUrl = new URL('https://proviti.github.io/list.html'); //window.location
-                window.history.pushState({ page: "list" }, title, newUrl);
+                window.history.pushState('aaaaaaaaa', title, url);
+                //const newUrl = new URL('https://proviti.github.io/list.html'); //window.location
+                //window.history.pushState({ page: "list" }, title, newUrl);
             }
             //document.getElementById("content").innerHTML = response.html;
             //document.title = response.pageTitle;
