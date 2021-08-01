@@ -9,7 +9,7 @@ Promise.all([
 
 function startVideo() {
   navigator.getUserMedia(
-    { video: {} },
+      { video: 'https://www.youtube.com/watch?v=TXEYUzOi6LQ' },
     stream => video.srcObject = stream,
     err => console.error(err)
   )
